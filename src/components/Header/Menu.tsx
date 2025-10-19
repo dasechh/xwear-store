@@ -1,7 +1,6 @@
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ExtendableButton from "./ExtendableButton";
-
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface HeaderMenuProps {
   menuOpen: boolean;
@@ -9,8 +8,7 @@ interface HeaderMenuProps {
 }
 
 export default function HeaderMenu({ menuOpen, setMenuOpen }: HeaderMenuProps) {
-  const navigate = useNavigate();
-  const isDesktop = window.innerWidth >= 1536;
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1536);
   const hamburger = !isDesktop;
 
   const ref = useRef<HTMLDivElement>(null);
@@ -35,7 +33,9 @@ export default function HeaderMenu({ menuOpen, setMenuOpen }: HeaderMenuProps) {
 
   useEffect(() => {
     const handleResize = () => {
-      setMenuOpen(window.innerWidth >= 1536);
+      const desktop = window.innerWidth >= 1536;
+      setIsDesktop(desktop);
+      setMenuOpen(desktop);
     };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -46,7 +46,7 @@ export default function HeaderMenu({ menuOpen, setMenuOpen }: HeaderMenuProps) {
       {hamburger && (
         <button
           ref={buttonRef}
-          className="my-10 flex cursor-pointer flex-col justify-center gap-[9.5px] p-1 pl-12.5"
+          className="flex cursor-pointer flex-col justify-center gap-[9.5px] py-1 max-md:z-1 md:pl-12.5"
           onClick={() => {
             setMenuOpen((prev) => !prev);
           }}
@@ -67,7 +67,7 @@ export default function HeaderMenu({ menuOpen, setMenuOpen }: HeaderMenuProps) {
       {menuOpen && (
         <div
           ref={ref}
-          className={`${hamburger ? "bg-xwear-black absolute top-25 left-30 flex w-[350px] flex-col gap-12 pb-11 pl-11 whitespace-nowrap" : "flex flex-row justify-center gap-12"} px-30 font-[RF-Dewi] text-sm whitespace-nowrap text-white`}
+          className={`${hamburger ? "bg-xwear-black absolute top-25 left-30 flex w-[350px] flex-col gap-12 pb-11 pl-11 whitespace-nowrap max-md:top-0 max-md:left-0 max-md:h-full max-md:pt-16.5" : "flex flex-row justify-center gap-12"} px-30 font-[RF-Dewi] text-sm whitespace-nowrap text-white`}
         >
           <ExtendableButton
             text="Одежда"
@@ -110,9 +110,9 @@ export default function HeaderMenu({ menuOpen, setMenuOpen }: HeaderMenuProps) {
               { text: "Puma", link: "/puma" },
             ]}
           />
-          <a className="cursor-pointer" onClick={() => navigate("/calculator")}>
+          <Link className="cursor-pointer" to="/calculator">
             Расчет стоимости
-          </a>
+          </Link>
 
           <ExtendableButton
             text="Информация"

@@ -29,7 +29,7 @@ export default function HeaderSearch({ setMenuOpen }: HeaderSearchProps) {
       {open && (
         <form
           ref={ref}
-          className="bg-xwear-black box-border flex h-13 w-full translate-x-4 flex-row items-center rounded-full pr-4 pl-7 font-[RF-Dewi] outline-[1px] outline-offset-[-1px] outline-white/10 focus-within:outline-white/40"
+          className="bg-xwear-black box-border flex h-13 w-full flex-row items-center pr-4 pl-7 font-[RF-Dewi] outline-offset-[-1px] outline-white/10 focus-within:outline-white/40 max-md:absolute max-md:z-1000 max-md:h-20 max-md:-translate-x-3 md:translate-x-4 md:rounded-full md:outline-[1px]"
           onSubmit={(e) => {
             e.preventDefault();
             const input = e.currentTarget.elements.namedItem(
@@ -42,12 +42,12 @@ export default function HeaderSearch({ setMenuOpen }: HeaderSearchProps) {
             name="search"
             autoComplete="off"
             autoFocus
-            className="flex-1 bg-transparent text-white/40 outline-none"
+            className="flex-1 truncate bg-transparent text-white/40 outline-none"
             placeholder="Поиск по каталогу товаров"
           />
           <button
             type="submit"
-            className="flex cursor-pointer items-center gap-2 text-white"
+            className="flex flex-shrink-0 cursor-pointer items-center gap-2 text-white"
           >
             <img src={searchLogo} alt="Search" />
           </button>
@@ -55,7 +55,7 @@ export default function HeaderSearch({ setMenuOpen }: HeaderSearchProps) {
       )}
       {!open && (
         <button
-          className="ml-auto flex-shrink-0 cursor-pointer"
+          className="flex-shrink-0 cursor-pointer max-md:order-2 max-md:pl-9 md:ml-auto"
           onClick={() => {
             setOpen(true);
             setMenuOpen(false);
