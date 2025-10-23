@@ -1,11 +1,12 @@
-import { configureStore } from '@reduxjs/toolkit';
-import cartReducer from '../features/cartSlice';
-import { useSelector, type TypedUseSelectorHook } from 'react-redux';
+import { configureStore } from "@reduxjs/toolkit";
+import cartReducer from "../features/cartSlice";
+import { useSelector, type TypedUseSelectorHook } from "react-redux";
 
 const preloadedState = {
-  cart: JSON.parse(localStorage.getItem('cart') || '{"items":[],"total":0,"totalQuantity":0}'),
+  cart: JSON.parse(
+    localStorage.getItem("cart") || '{"items":[],"total":0,"totalQuantity":0}',
+  ),
 };
-
 
 export const store = configureStore({
   reducer: {
@@ -16,7 +17,7 @@ export const store = configureStore({
 
 store.subscribe(() => {
   const state = store.getState();
-  localStorage.setItem('cart', JSON.stringify(state.cart));
+  localStorage.setItem("cart", JSON.stringify(state.cart));
 });
 
 export type RootState = ReturnType<typeof store.getState>;
