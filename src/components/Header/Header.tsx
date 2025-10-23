@@ -23,7 +23,7 @@ export default function Header() {
         </Link>
         <HeaderMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <HeaderSearch setMenuOpen={setMenuOpen} />
-        
+
         <div className="ml-[22px] flex flex-row flex-nowrap gap-[22px] whitespace-nowrap max-md:order-4 max-md:ml-auto">
           <HeaderButton navIconType="favourite" />
           <HeaderButton navIconType="profile" />

@@ -1,0 +1,32 @@
+.swiper-dot {
+  background-color: rgb(255, 255, 255);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.swiper-dot-active {
+  transform: scale(calc(10 / 6));
+}
+
+.swiper-pagination {
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+  width: 10px !important;
+}
+
+@media (max-width: 767px) {
+  .swiper-pagination {
+    display: none;
+  }
+}
