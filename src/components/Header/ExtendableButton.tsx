@@ -27,7 +27,7 @@ export default function ExtendableButton({ text, subButtons }: ExtendProps) {
 
   return (
     <>
-      <div className="relative" ref={ref}>
+      <div className="relative z-1" ref={ref}>
         {subButtons ? (
           <button
             onClick={() => setOpen((prev) => !prev)}
@@ -49,7 +49,7 @@ export default function ExtendableButton({ text, subButtons }: ExtendProps) {
         )}
 
         {open && subButtons && (
-          <div className="bg-xwear-black box-border flex w-[275px] flex-col gap-10.5 pt-8 pl-8 2xl:absolute 2xl:top-15 2xl:left-[-2rem] 2xl:pb-11">
+          <div className="bg-xwear-black z-1 box-border flex w-[275px] flex-col gap-10.5 pt-8 pl-8 2xl:absolute 2xl:top-15 2xl:left-[-2rem] 2xl:pb-11">
             {subButtons.map((el, i) => (
               <Link
                 key={i}

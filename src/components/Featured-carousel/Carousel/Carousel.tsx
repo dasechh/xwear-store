@@ -7,7 +7,7 @@ import "swiper/css";
 
 export default function Carousel() {
   return (
-    <section>
+    <section className="w-full">
       <Swiper
         className="h-157.75 w-full max-w-[1540px] rounded-[7px] max-2xl:h-[450px] max-md:h-[340px]"
         direction={"horizontal"}
@@ -31,7 +31,7 @@ export default function Carousel() {
           bulletActiveClass: "swiper-dot-active",
         }}
         autoplay={{
-          delay: 500000,
+          delay: 10000,
         }}
       >
         <SwiperSlide>

@@ -67,7 +67,7 @@ export default function HeaderMenu({ menuOpen, setMenuOpen }: HeaderMenuProps) {
       {menuOpen && (
         <div
           ref={ref}
-          className={`${hamburger ? "bg-xwear-black absolute top-25 left-30 flex w-[350px] flex-col gap-12 pb-11 pl-11 whitespace-nowrap max-md:top-0 max-md:left-0 max-md:h-full max-md:pt-16.5" : "flex flex-row justify-center gap-12"} px-30 font-[RF-Dewi] text-sm whitespace-nowrap text-white`}
+          className={`${hamburger ? "bg-xwear-black absolute top-25 left-30 flex w-[350px] flex-col gap-12 pb-11 pl-11 whitespace-nowrap max-md:top-0 max-md:left-0 max-md:h-full max-md:pt-16.5" : "flex flex-row justify-center gap-12"} z-1 px-30 font-[RF-Dewi] text-sm whitespace-nowrap text-white`}
         >
           <ExtendableButton
             text="Одежда"
