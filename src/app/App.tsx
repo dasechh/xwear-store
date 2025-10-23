@@ -1,5 +1,5 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import HomePage from '../pages/Home/Home';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "../pages/Home/Home";
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
         <Route path="/favourite" element={<HomePage />} />
         <Route path="/profile" element={<HomePage />} />
         <Route path="/cart" element={<HomePage />} />
+        <Route path="/catalog/*" element={<HomePage />} />
       </Routes>
     </BrowserRouter>
   );

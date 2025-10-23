@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 interface CartItem {
   id: number;
@@ -20,7 +20,7 @@ const initialState: CartState = {
 };
 
 const cartSlice = createSlice({
-  name: 'cart',
+  name: "cart",
   initialState,
   reducers: {
     addToCart: (state, action) => {
@@ -40,7 +40,9 @@ const cartSlice = createSlice({
         state.total -= item.price;
         state.totalQuantity--;
         if (item.quantity === 0) {
-          state.items = state.items.filter((item) => item.id !== action.payload.id);
+          state.items = state.items.filter(
+            (item) => item.id !== action.payload.id,
+          );
         }
       }
     },
