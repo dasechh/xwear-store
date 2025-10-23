@@ -1,9 +1,36 @@
 @font-face {
-  font-family: 'RF-Dewi';
-  src: local('RF Dewi Extended Regular'), local('RF-Dewi-Extended-Regular'),
-    url('./RFDewiExtended-Regular.woff2') format('woff2'),
-    url('./fonts/RFDewiExtended-Regular.woff') format('woff'),
-    url('.fonts/RFDewiExtended-Regular.ttf') format('truetype');
+  font-family: "RF-Dewi";
+  src:
+    local("RF Dewi Extended Regular"),
+    local("RF-Dewi-Extended-Regular"),
+    url("./RFDewiExtended-Regular.woff2") format("woff2"),
+    url("./fonts/RFDewiExtended-Regular.woff") format("woff"),
+    url(".fonts/RFDewiExtended-Regular.ttf") format("truetype");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RF- Dewi-Expanded";
+  src:
+    local("RF Dewi Expanded Bold"),
+    local("RF-Dewi-Expanded-Regular"),
+    url("./rf-dewi-expanded-bold.woff2") format("woff2"),
+    url("./RFDewiExtended-Regular.woff") format("woff"),
+    url("./RFDewiExtended-Regular.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RF-Dewi-Expanded";
+  src:
+    local("RF Dewi Expanded Ultrabold"),
+    local("RFDewiExpanded-Ultrabold"),
+    url("./RFDewiExpanded-Ultrabold.eot?#iefix") format("embedded-opentype"),
+    url("./RFDewiExpanded-Ultrabold.woff2") format("woff2"),
+    url("./RFDewiExpanded-Ultrabold.woff") format("woff"),
+    url("./RFDewiExpanded-Ultrabold.ttf") format("truetype");
+  font-weight: 800;
   font-style: normal;
 }
