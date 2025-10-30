@@ -25,9 +25,9 @@ export default function HeaderMenu({ menuOpen, setMenuOpen }: HeaderMenuProps) {
         setMenuOpen(false);
       }
     };
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("pointerdown", handleClickOutside);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("pointerdown", handleClickOutside);
     };
   });
 
@@ -46,7 +46,7 @@ export default function HeaderMenu({ menuOpen, setMenuOpen }: HeaderMenuProps) {
       {hamburger && (
         <button
           ref={buttonRef}
-          className="flex cursor-pointer flex-col justify-center gap-[9.5px] py-1 max-md:z-1 md:pl-12.5"
+          className="flex cursor-pointer flex-col justify-center gap-[9.5px] py-1 max-md:z-2 md:pl-12.5"
           onClick={() => {
             setMenuOpen((prev) => !prev);
           }}

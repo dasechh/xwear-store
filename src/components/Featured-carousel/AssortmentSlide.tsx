@@ -2,16 +2,17 @@ import GoButton from "../Buttons/GoButton";
 
 export default function Slide() {
   return (
-    <div className="flex h-full w-full flex-col gap-15.75 bg-[url('/backgrounds/assortment.jpg')] bg-cover bg-center max-2xl:gap-4.75 max-md:pt-10.75 max-md:pr-6.75 max-md:pl-4.25 md:mb-8 md:px-17.5 md:pt-15 2xl:px-22.5 2xl:pt-24.5">
-      <div className="flex w-[35.6875rem] max-w-full flex-col max-md:gap-[7px] md:gap-4.75">
+    <div className="flex h-full w-full flex-col bg-[url('/backgrounds/assortment.jpg')] bg-cover bg-center max-md:pt-10.75 max-md:pr-6.75 max-md:pb-3.75 max-md:pl-4.25 md:mb-8 md:px-17.5 md:pt-15 md:pb-8 2xl:px-22.5 2xl:pt-24.5 2xl:pb-11.25">
+      <div className="flex w-min flex-col max-md:gap-[13px] md:gap-4.75">
         <h1>Широкий ассортимент одежды</h1>
-        <p className="text-xwear-black max-2xl:size-1.0625 size-4.75 h-16 w-full font-[RF-Dewi] text-[1.1875rem] leading-8 max-2xl:leading-6.75 max-md:h-14.25 max-md:text-xs max-md:leading-4.75">
-          Одежда от известных брендов у нас в каталоге. Только качественные вещи
+        <p className="text-xwear-black max-2xl:size-1.0625 size-4.75 h-fit w-full font-[RF-Dewi] leading-8 max-2xl:leading-6.75 max-md:h-14.25 max-md:text-xs max-md:leading-4.75 2xl:text-[1.1875rem]">
+          Одежда от известных брендов у&nbsp;нас в каталоге. Только качественные
+          вещи
         </p>
         <GoButton text="Перейти в каталог" link="/catalog" />
       </div>
 
-      <div className="flex h-[67px] w-min flex-row gap-3.75 max-2xl:h-[54px] max-2xl:gap-2.5">
+      <div className="mt-auto flex h-[67px] w-min flex-row gap-3.75 max-2xl:h-[54px] max-2xl:gap-2.5">
         <button className="carousel-previous flex aspect-[1/1] h-full cursor-pointer items-center justify-center rounded-full bg-white hover:bg-[#F0F2F6]">
           <svg
             width="8"
