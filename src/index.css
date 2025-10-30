@@ -7,6 +7,7 @@
   --color-xwear-blue: #49d0ff;
   --color-xwear-light-grey: #8c8f96;
   --color-xwear-dark-grey: #303030;
+  --color-xwear-regular: #dcdce0;
 }
 
 :root {
@@ -34,7 +35,7 @@ hr {
 h1 {
   font-size: 3.1875rem;
   font-family: "RF-Dewi-Expanded";
-  font-weight: 900;
+  font-weight: 800;
   line-height: 124%;
   color: var(--color-xwear-black);
   text-transform: uppercase;
