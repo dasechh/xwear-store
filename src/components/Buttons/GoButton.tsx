@@ -9,7 +9,7 @@ export default function GoButton({ text, link }: GoButtonProps) {
   return (
     <Link
       to={link}
-      className="max-md:size-0.625 bg-xwear-black flex w-min flex-row items-center justify-center gap-5.75 rounded-[5px] px-6.75 py-5.75 font-[RF-Dewi-Expanded] text-xs leading-5 font-[800] whitespace-nowrap text-white uppercase max-md:text-[0.625rem]"
+      className="max-md:size-0.625 bg-xwear-black flex w-min flex-row items-center justify-center gap-5.75 rounded-[5px] px-6.75 py-5.75 font-[RF-Dewi-Expanded] text-xs leading-5 font-[800] whitespace-nowrap text-white uppercase max-md:px-5 max-md:py-4 max-md:text-[0.625rem]"
     >
       {text}
 
