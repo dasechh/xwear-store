@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import xwearLogo from "../../assets/icons/xwear-logo.svg";
-import HeaderMenu from "./Menu";
+import xwearLogo from "../../assets/icons/xwear/xwear-logo.svg";
+import HeaderMenu from "./HeaderMenu";
 import HeaderSearch from "./Search";
 import HeaderButton from "./HeaderButtons";
 
@@ -17,7 +17,7 @@ export default function Header() {
         >
           <img
             src={xwearLogo}
-            alt="xwear logo"
+            alt="Xwear"
             className="h-auto w-auto max-w-none cursor-pointer"
           />
         </Link>

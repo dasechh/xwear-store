@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import arrow from "../../assets/icons/arrow.svg";
+import arrow from "../../assets/icons/arrows/arrow.svg";
 
 interface ExtendProps {
   text: string;
