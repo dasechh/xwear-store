@@ -2,7 +2,7 @@ import GoButton from "../Buttons/GoButton";
 
 export default function Slide() {
   return (
-    <div className="flex h-full w-full flex-col bg-[url('/backgrounds/assortment.jpg')] bg-cover bg-center max-md:pt-10.75 max-md:pr-6.75 max-md:pb-3.75 max-md:pl-4.25 md:mb-8 md:px-17.5 md:pt-15 md:pb-8 2xl:px-22.5 2xl:pt-24.5 2xl:pb-11.25">
+    <div className="rounded-[7px]flex h-full w-full flex-col bg-[url('/backgrounds/assortment.jpg')] bg-cover bg-center max-md:pt-10.75 max-md:pr-6.75 max-md:pb-3.75 max-md:pl-4.25 md:mb-8 md:px-17.5 md:pt-15 md:pb-8 2xl:px-22.5 2xl:pt-24.5 2xl:pb-11.25">
       <div className="flex w-min flex-col max-md:gap-[13px] md:gap-4.75">
         <h1>Широкий ассортимент одежды</h1>
         <p className="text-xwear-black max-2xl:size-1.0625 size-4.75 h-fit w-full font-[RF-Dewi] leading-8 max-2xl:leading-6.75 max-md:h-14.25 max-md:text-xs max-md:leading-4.75 2xl:text-[1.1875rem]">
