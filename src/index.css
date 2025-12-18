@@ -41,10 +41,23 @@ h1 {
   text-transform: uppercase;
 }
 
+h3 {
+  font-family: "RF-Dewi";
+  font-weight: 700;
+  font-size: 1.1875rem;
+  line-height: 147%;
+  text-transform: uppercase;
+  color: black;
+}
+
 @media (max-width: 1535px) {
   h1 {
     font-size: 2.125rem;
     line-height: 2.6875rem;
+  }
+  h2 {
+    font-size: 1.5625rem;
+    line-height: 2.625rem;
   }
 }
 
@@ -52,6 +65,14 @@ h1 {
   h1 {
     font-size: 1.125rem;
     line-height: 1.5625rem;
+  }
+  h2 {
+    font-size: 1.125rem;
+    line-height: 2.625rem;
+  }
+  h3 {
+    font-size: 0.875rem;
+    line-height: 129%;
   }
 }
 /* * {

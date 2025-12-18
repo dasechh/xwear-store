@@ -11,6 +11,33 @@
 }
 
 @font-face {
+  font-family: "RF-Dewi";
+  src:
+    local("RF Dewi Extended Regular"),
+    local("RF-Dewi-Extended-Regular"),
+    url("./RFDewiExtended-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./RFDewiExtended-Bold.woff2") format("woff2"),
+    url("./RFDewiExtended-Bold.woff") format("woff"),
+    url("./RFDewiExtended-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RF-Dewi";
+  src: url("RFDewiExtended-Ultrabold.eot");
+  src:
+    local("RF Dewi Extended Ultrabold"),
+    local("RFDewiExtended-Ultrabold"),
+    url("./RFDewiExtended-Ultrabold.eot?#iefix") format("embedded-opentype"),
+    url("./RFDewiExtended-Ultrabold.woff2") format("woff2"),
+    url("./RFDewiExtended-Ultrabold.woff") format("woff"),
+    url("./RFDewiExtended-Ultrabold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "RF-Dewi-Expanded";
   src:
     local("RF Dewi Expanded Bold"),
