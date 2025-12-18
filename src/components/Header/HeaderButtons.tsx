@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import favouriteLogo from "../../assets/icons/favourite.svg";
-import profileLogo from "../../assets/icons/profile.svg";
-import cartLogo from "../../assets/icons/cart.svg";
+import favouriteLogo from "../../assets/icons/buttons/favourite.svg";
+import profileLogo from "../../assets/icons/buttons/profile.svg";
+import cartLogo from "../../assets/icons/buttons/cart.svg";
 import CartInfo from "./CartInfo";
 
 const Icons = {

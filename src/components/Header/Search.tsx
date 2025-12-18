@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import searchLogo from "../../assets/icons/search.svg";
+import searchLogo from "../../assets/icons/buttons/search.svg";
 import { useEffect, useRef, useState } from "react";
 
 interface HeaderSearchProps {
